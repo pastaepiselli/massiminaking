@@ -1,27 +1,72 @@
 <!DOCTYPE html>
-<html>
+<html lang="it">
   <head>
-    <title> my site </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>pastaepiselli / massiminaking</title>
     <style>
+      body {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 20px;
+        font-family: sans-serif;
+        line-height: 1.6;
+      }
+
       .media-container {
         display: flex;
-        align-items: center; 
-        gap: 20px;           
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
       }
-      
-      .media-container pre {
+
+      .media-container img {
+        width: 180px;
+        height: auto;
+        flex-shrink: 0;
+      }
+
+      .ascii {
         margin: 0;
-        white-space: pre;
+        min-width: 0;
+        overflow-x: auto;
+        font-size: 7px;
+        line-height: 1.1;
+      }
+
+      nav a {
+        margin-right: 15px;
+      }
+
+      /* su schermi stretti: foto sopra, ascii sotto a tutta larghezza */
+      @media (max-width: 800px) {
+        .media-container {
+          flex-wrap: wrap;
+        }
+        .ascii {
+          order: 3;
+          width: 100%;
+        }
       }
     </style>
   </head>
   <body>
-    <h1> pastaepiselli / massiminaking </h1>
+    <h1 style="text-align:center;">pastaepiselli / massiminaking</h1>
+    <h3 style="color:blue; text-align:center;">Hello world!</h3>
+
+    <ul>
+      <li><a href="list-post.html">yap yap yap</a></li>
+      <li><a href="projects.html">projects</a></li>
+      <li><a href="hard-images.html">hard images</a></li>
+    </ul>
+
+    <hr>
 
     <div class="media-container">
-      <img src="images/me.jpeg" alt="me" width="500" height="400">
-      
-      <pre>
+      <img src="images/me.jpeg" alt="me">
+
+      <pre class="ascii">
   :####     ##.####   :####    ##.####    .####.   ##:  :##   :####                 ####:   :####     ##.####   ####        ####:   :####   
   ######    #######   ######   #######   .######.   ##  ##    ######               #######   ######    #######   ####      #######   ######  
   #:  :##   ###.      #:  :##  ###  :##  ###  ###  :##  ##:   #:  :##              ##:  :#   #:  :##   ###.        ##      ##:  :#   #:  :## 
@@ -32,18 +77,16 @@
  ########   ##       ########  ##    ##  .######.    ####    ########              #######  ########   ##       ########   #######  ######## 
    ###.##   ##         ###.##  ##    ##   .####.     :##:      ###.##                ####:    ###.##   ##       ########     ####:    ###.## 
       </pre>
-      <img src="images/rich-spongebob.jpg" alt="rich spongebob" width="500" height="400">
+
+      <img src="images/rich-spongebob.jpg" alt="rich spongebob">
     </div>
 
-    <h3 style="color:blue;"> Hello world! </h3>
-    <ul>
-      <li> yap yap yap </li>
-      <li> <a href="projects.html">projects</a> </li>
-      <li> <a href="hard-images.html">hard images </a> </li>
-    </ul>
     <hr>
-    <a href="index.html">home</a>
-    <a href="https://github.com/pastaepiselli">github</a>
-    <a href="https://leetcode.com/u/pastaepiselli/">leetcode</a>
+
+    <nav>
+      <a href="index.html">home</a>
+      <a href="https://github.com/pastaepiselli">github</a>
+      <a href="https://leetcode.com/u/pastaepiselli/">leetcode</a>
+    </nav>
   </body>
 </html>
