@@ -1,0 +1,18 @@
+#+TITLE: projects
+#+OPTIONS: num:nil toc:nil
+
+* Newspaper on kindle
+Scipts that gets rss feed, parses it and send to koreader via ssh.
+[[https://github.com/pastaepiselli/koreader-newspaper][repo]]
+
+* Sigarette
+Sprigboot backend of a website to review italian cigarettes.
+[[https://github.com/pastaepiselli/Sigarette][repo]]
+
+* I AM IN DANGER
+Funny java project with the javafx library.
+[[https://github.com/pastaepiselli/I-AM-IN-DANGER][repo]]
+
+* My site
+Yes this one.
+[[https://github.com/pastaepiselli/massiminaking][repo]]

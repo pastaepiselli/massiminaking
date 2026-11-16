@@ -1,0 +1,5 @@
+#+TITLE: hard images
+#+OPTION: num:nil toc:nil
+
+#+CAPTION: Porte scorrevoli e tanto amore
+[[file:./images/ermetica.jpg]]

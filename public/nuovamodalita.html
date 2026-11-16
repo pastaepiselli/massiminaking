@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-11-16 Mon 01:04 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>nuova modalita di biliardino</title>
+<meta name="author" content="biliardino + carte" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-c:before { content: 'C'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'JavaScript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">nuova modalita di biliardino</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#orgf3537ba">Io amo il biliardino</a></li>
+<li><a href="#org9374176">1 v 1 passetto</a></li>
+<li><a href="#org95cb931">1 v 1 solo portiere</a></li>
+<li><a href="#orgf096b68">Biliardino + carte</a>
+<ul>
+<li><a href="#org176f9f1">Cosa serve</a></li>
+<li><a href="#org5d143f2">Preparazione</a>
+<ul>
+<li><a href="#org8d012d9">Bonus</a></li>
+<li><a href="#org3b3a35f">Malus</a></li>
+<li><a href="#org3265688">Punteggio</a></li>
+<li><a href="#orgc59cdb8">La matta</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#org1f05680">Conclusione</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgf3537ba" class="outline-2">
+<h2 id="orgf3537ba">Io amo il biliardino</h2>
+<div class="outline-text-2" id="text-orgf3537ba">
+<p>
+Sono un grande fan del biliardino: posso giocarci per ore, anche dopo infiniti mal di schiena.
+2 v 2 o 1 v 1, mi diverte sempre. Non c'è un momento in cui, se qualcuno mi dice
+"giochiamo a biliardino?", io risponda di no.
+</p>
+
+<p>
+Questo attaccamento morboso per un passatempo che per tutti gli altri finisce dopo una o due partite
+porta spesso me, da solo o con un altro malato come me, a non voler più giocare semplicemente
+a chi arriva prima a dieci, ma a giocare in modi non convenzionali.
+</p>
+</div>
+</div>
+<div id="outline-container-org9374176" class="outline-2">
+<h2 id="org9374176">1 v 1 passetto</h2>
+<div class="outline-text-2" id="text-org9374176">
+<p>
+Una delle prime modalità create insieme a Emiliano fu <b>1 v 1 passetto</b>.
+Per passetto si intende quando la palla colpisce 2 giocatori sulla stessa fila per effettuare un tiro.
+Quando giochiamo, questa regola viene bandita perché ritenuta troppo forte e anche perché
+va contro le regole del calcio balilla, che cito qui:
+</p>
+
+<blockquote>
+<p>
+È vietato toccare la pallina due volte con lo stesso calciatore o con i calciatori della stessa stecca
+prima del tiro. Se questo dovesse realizzarsi si dovrà passare alla sponda precedentemente al tiro.
+È ammesso il doppio tocco solo in attacco in contropiede e in mediana, escluso lo stop e il tiro
+anche se dovesse rimbalzare su un altro omino.
+<a href="https://regoledelgioco.com/giochi-di-abilita/calcio-balilla/">fonte</a>
+</p>
+</blockquote>
+
+<p>
+In questa modalità è permesso segnare solo con questa mossa, da tutte le stecche, e chi arriva prima a
+<b>2punti</b> vince. La scelta dei 2 punti non è casuale: dopo vari test ci siamo resi conto
+che giocare a più punti può risultare noioso e ripetitivo. Questa modalità porta il passetto al massimo delle
+sue potenzialità, sperimentando ogni combinazione possibile per segnare.
+</p>
+</div>
+</div>
+<div id="outline-container-org95cb931" class="outline-2">
+<h2 id="org95cb931">1 v 1 solo portiere</h2>
+<div class="outline-text-2" id="text-org95cb931">
+<p>
+Questa modalità non ha ingranato molto in quanto lenta e con un setup costante. Consiste appunto nel giocare
+solo con il portiere. Per prima cosa bisogna girare tutte le stecche con la testa in giù, per permettere
+il passaggio pulito della palla da porta a porta, e controllare dopo ogni tiro che siano ancora tutte girate.
+Si posiziona la palla davanti alla propria porta, in qualsiasi angolazione purché consenta il tiro, e si tira.
+Nel frattempo l'altro giocatore, con la sola stecca del portiere, potrà parare il tiro.
+Si arriva a <b>5 punti</b>.
+</p>
+
+<p>
+Nonostante sia una modalità poco giocata, volevo comunque citarla perché penso che nei biliardini
+in cui la rimozione delle stecche è semplificata possa risultare molto divertente.
+</p>
+</div>
+</div>
+<div id="outline-container-orgf096b68" class="outline-2">
+<h2 id="orgf096b68">Biliardino + carte</h2>
+<div class="outline-text-2" id="text-orgf096b68">
+<p>
+Infine arriva il motivo per cui sto scrivendo a mano in HTML parlando di biliardino. Ricordo questa sera
+in cui, mi sa dopo una partita della Roma?, volevamo giocare a biliardino ma eravamo in 3. Ovviamente
+quel <i>lame ass</i> di Tiziano stava sul divano e così io ed Emiliano ci mettiamo a biliardinare.
+</p>
+
+<p>
+Dopo qualche 1 v 1 passetto, l'illuminazione. Erano rimaste le carte sul tavolo da qualche sera prima,
+quando avevamo giocato a <b>danilo corre senza braccia</b> (scriverò prossimamente anche su quello).
+Così è nata la domanda: "Come si può unire il biliardino con le carte?", alla fine solo due delle cose
+che con il mio gruppo passiamo la maggior parte del tempo a fare.
+E cazzo, abbiamo creato <b>il gioco</b>.
+</p>
+</div>
+<div id="outline-container-org176f9f1" class="outline-3">
+<h3 id="org176f9f1">Cosa serve</h3>
+<div class="outline-text-3" id="text-org176f9f1">
+<p>
+Un biliardino + un mazzo di carte italiane.
+</p>
+</div>
+</div>
+<div id="outline-container-org5d143f2" class="outline-3">
+<h3 id="org5d143f2">Preparazione</h3>
+<div class="outline-text-3" id="text-org5d143f2">
+<p>
+Si mischia il mazzo e si spacca. Il giocatore che ha mischiato gira 2 carte, una per ciascun giocatore.
+Ogni seme ha il suo significato:
+</p>
+</div>
+<div id="outline-container-org8d012d9" class="outline-4">
+<h4 id="org8d012d9">Bonus</h4>
+<div class="outline-text-4" id="text-org8d012d9">
+<ul class="org-ul">
+<li><b>Denari</b>: il valore del tuo prossimo goal viene moltiplicato per il numero appena uscito.</li>
+<li><b>Coppe</b>: si possono eseguire mosse come passetto (gancio, comunque mosse reputate illegali) con il numero di giocatori della carta.</li>
+</ul>
+<p>
+Notare come il numero sia sempre una somma precisa dei giocatori sulle stecche.
+</p>
+</div>
+</div>
+<div id="outline-container-org3b3a35f" class="outline-4">
+<h4 id="org3b3a35f">Malus</h4>
+<div class="outline-text-4" id="text-org3b3a35f">
+<ul class="org-ul">
+<li><b>Spade</b>: non si puo segnare con il numero di giocatori indicato sulla carta.</li>
+<li><b>Bastoni</b>: non si puo usare il numero di giocatori (non puo proprio muovere la stecca) indicato sulla carta.</li>
+</ul>
+
+<p>
+Soprattuto in palle con malus di bastoni ci si potrebbe trovare in situazioni in cui la palla non potra essere
+toccata da nessun giocatore, in quel caso semplicemente si ribatte.
+</p>
+</div>
+</div>
+<div id="outline-container-org3265688" class="outline-4">
+<h4 id="org3265688">Punteggio</h4>
+<div class="outline-text-4" id="text-org3265688">
+<p>
+Vince il primo che arriva a 10 punti.
+</p>
+</div>
+</div>
+<div id="outline-container-orgc59cdb8" class="outline-4">
+<h4 id="orgc59cdb8">La matta</h4>
+<div class="outline-text-4" id="text-orgc59cdb8">
+<p>
+Se si pesca <b>l'asso di denari</b>, questo può valere o come un 10 di denari
+(il massimo bonus ottenibile) o come un 10 di bastoni per l'avversario
+(il massimo malus ottenibile).
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org1f05680" class="outline-2">
+<h2 id="org1f05680">Conclusione</h2>
+<div class="outline-text-2" id="text-org1f05680">
+<p>
+Queste sono tutte le regole del gioco: ci sono infinite combinazioni per infinito divertimento.
+Io ho scritto questo, ma ci tengo a fare uno shout out al mio buddy di biliardino e co-inventore
+di queste modalità, <b>Emiliano</b>: senza di lui tutto questo divertimento non sarebbe possibile.
+Non mi resta che dirvi di giocare a biliardino e provare questa modalità.
+</p>
+
+<p>
+Grazie per la lettura.
+</p>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: biliardino + carte</p>
+<p class="date">Created: 2026-11-16 Mon 01:04</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

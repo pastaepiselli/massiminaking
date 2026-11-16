@@ -1,0 +1,11 @@
+#+TITLE: massiminaking / pastaepiselli
+#+OPTIONS: num:nil
+
+Hi i like coding, emacs, making montages, and extremely horror content.
+
+- [[file:postlist.org][yapping time]]
+- [[file:projects.org][projects]]
+- [[file:hardimages.org][hard images]]
+
+my social: [[https://github.com/pastaepiselli][git]] [[https://www.youtube.com/@massiminaking][yt]] [[https://leetcode.com/u/pastaepiselli/\]\]][leetcode]]
+ 
