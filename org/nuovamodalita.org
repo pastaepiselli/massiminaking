@@ -1,6 +1,6 @@
 #+TITLE: nuova modalita di biliardino
-#+AUTHOR: biliardino + carte
 #+OPTIONS: num:nil
+[[file:postlist.org][back to posts]]
 * Io amo il biliardino
 Sono un grande fan del biliardino: posso giocarci per ore, anche dopo infiniti mal di schiena.
 2 v 2 o 1 v 1, mi diverte sempre. Non c'è un momento in cui, se qualcuno mi dice

@@ -1,6 +1,6 @@
 #+TITLE: projects
 #+OPTIONS: num:nil toc:nil
-
+[[file:index.org][back home]]
 * Newspaper on kindle
 Scipts that gets rss feed, parses it and send to koreader via ssh.
 [[https://github.com/pastaepiselli/koreader-newspaper][repo]]
@@ -14,5 +14,5 @@ Funny java project with the javafx library.
 [[https://github.com/pastaepiselli/I-AM-IN-DANGER][repo]]
 
 * My site
-Yes this one.
+Yes this one, made with org mode.
 [[https://github.com/pastaepiselli/massiminaking][repo]]
