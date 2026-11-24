@@ -2,4 +2,13 @@
 #+OPTION: num:nil toc:nil
 
 #+CAPTION: Porte scorrevoli e tanto amore
-[[file:./images/ermetica.jpg]]
+#+ATTR_HTML: :width 300px :heigth 300px
+[[file:../images/ermetika.jpg]]
+
+#+CAPTION: Autoesplicativa 
+#+ATTR_HTML: :width 300px :heigth 300px
+[[file:../images/formica-lavoratore.jpeg]]
+
+#+CAPTION: thug life
+#+ATTR_HTML: :width 300px :heigth 300px
+[[file:../images.rich-spongebob.jpg]]
